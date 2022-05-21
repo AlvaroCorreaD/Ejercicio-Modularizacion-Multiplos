@@ -1,13 +1,28 @@
+// defino variables
 let numero1: number;
 let numero2: number;
+let resultado: number = 0;
 
-function calcularMultiplo(numero1: number, numero2: number) {
-  while (numero1 & numero2) {
-    numero1 = Number(prompt("Ingrese el primer parámetro: "));
-    numero2 = Number(prompt("Ingrese el segundo parámetro: "));
+// No se que poner dentro de la función
+function esMultiplo() {}
+// No se que poner dentro de la función
 
-    if (numero1 % numero2 == 0) {
-      console.log("El número ", numero1, " es múltiplo de ", numero2);
-    } else {
-      console.log("El nnúmero ", numero1, " no es múltiplo de ", numero2);
-    }
+// pido al usuario que ingrese parametros
+numero1 = Number(prompt("Ingrese el primer parámetro:"));
+numero2 = Number(prompt("Ingrese el seugundo parámetro:"));
+
+// la función la llamo antes o dentro del if?
+if (resultado === 0) {
+  console.log(
+    "El número ",
+    numero1,
+    " es múltiplo de ",
+    numero2,
+    " dado que la divisón entre los mismos es ",
+    resultado
+  );
+
+  // si no se cumple la funcion imprimo error por consola
+} else {
+  console.log("El número ", numero1, " no es múltiplo de ", numero2);
+}
