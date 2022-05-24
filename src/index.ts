@@ -1,23 +1,21 @@
-// defino variables
 let numero1: number;
 let numero2: number;
 let resultado = 0;
+let contador: number;
 
-// No se que poner dentro de la función
-// function esMultiplo() {
-//   return resultado = numero1 % numero2
-// }
-// No se que poner dentro de la función
+function esMultiplo() {
+  for (contador = 0; contador === 0; contador++) {
+    resultado = numero1 % numero2;
+  }
+}
 
-// pido al usuario que ingrese parametros
 numero1 = Number(prompt("Ingrese el primer parámetro:"));
-numero2 = Number(prompt("Ingrese el seugundo parámetro:"));
+numero2 = Number(prompt("Ingrese el segundo parámetro:"));
 
-// la función la llamo antes o dentro del if?
-// resultado = esMultiplo(numero1, numero2);
-
-if (numero1 % numero2 === resultado) {
-  // function esMultiplo();
+esMultiplo();
+if (resultado !== 0) {
+  console.log("El número", numero1, "no es múltiplo de", numero2);
+} else if (numero1 % numero2 === 0) {
   console.log(
     "El número",
     numero1,
@@ -26,9 +24,5 @@ if (numero1 % numero2 === resultado) {
     "dado que el resto de la división es",
     resultado
   );
-  // function esMultiplo()
-
-  // si no se cumple la funcion imprimo error por consola
-} else {
-  console.log("El número", numero1, "no es múltiplo de", numero2);
 }
+esMultiplo();
