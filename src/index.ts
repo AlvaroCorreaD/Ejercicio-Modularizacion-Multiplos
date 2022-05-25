@@ -17,7 +17,14 @@ numero2 = Number(prompt("Ingrese el segundo parámetro:"));
 resultado = esMultiplo(numero1, numero2);
 
 if (resultado === false) {
-  console.log("El número", numero1, "no es múltiplo de", numero2);
+  console.log(
+    "El número",
+    numero1,
+    "no es múltiplo de",
+    numero2,
+    "dado que el resto de la división es",
+    resultado
+  );
 } else {
   console.log(
     "El número",
