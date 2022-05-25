@@ -1,21 +1,24 @@
 let numero1: number;
 let numero2: number;
-let resultado = 0;
-let contador: number;
+let resultado: boolean;
 
-function esMultiplo() {
-  for (contador = 0; contador === 0; contador++) {
-    resultado = numero1 % numero2;
+function esMultiplo(num1: number, num2: number) {
+  let resto = num1 % num2;
+  if (resto === 0) {
+    return true;
+  } else {
+    return false;
   }
 }
 
 numero1 = Number(prompt("Ingrese el primer parámetro:"));
 numero2 = Number(prompt("Ingrese el segundo parámetro:"));
 
-esMultiplo();
-if (resultado !== 0) {
+resultado = esMultiplo(numero1, numero2);
+
+if (resultado === false) {
   console.log("El número", numero1, "no es múltiplo de", numero2);
-} else if (numero1 % numero2 === 0) {
+} else {
   console.log(
     "El número",
     numero1,
@@ -25,4 +28,3 @@ if (resultado !== 0) {
     resultado
   );
 }
-esMultiplo();
