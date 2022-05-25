@@ -1,10 +1,14 @@
 let numero1: number;
 let numero2: number;
-let resultado: number;
+let resultado: boolean;
 
 function esMultiplo(num1: number, num2: number) {
   let resto = num1 % num2;
-  return resto;
+  if (resto === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 numero1 = Number(prompt("Ingrese el primer parámetro:"));
@@ -12,7 +16,7 @@ numero2 = Number(prompt("Ingrese el segundo parámetro:"));
 
 resultado = esMultiplo(numero1, numero2);
 
-if (resultado !== 0) {
+if (resultado === false) {
   console.log("El número", numero1, "no es múltiplo de", numero2);
 } else {
   console.log(
